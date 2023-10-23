@@ -81,7 +81,7 @@ export const Dia = ({ navigation }) => {
 
                 <ScrollView horizontal={true} style={{ position: 'absolute', top: 250 }} showsHorizontalScrollIndicator={false} >
                     {categorias.map((category) =>
-                        <TouchableOpacity key={category.id} onPress={() => navigation.navigate('Oneboard')}>
+                        <TouchableOpacity key={category.id} onPress={() => navigation.navigate('Credelec')}>
                             <View style={{
                                 width: 125, height: 150, backgroundColor: PRIMARY,
                                 marginTop: SPACING * 2, borderRadius: SPACING, marginLeft: SPACING, padding: SPACING, justifyContent: 'space-between'
