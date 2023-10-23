@@ -12,8 +12,11 @@ import { ScrollView } from "react-native";
 import { Image } from "react-native";
 const { width, height } = Dimensions.get('screen');
 
-export const Dia = () => {
+export const Dia = ({ navigation }) => {
     const [active, setAtive] = useState(false);
+    const navigateToCredelec = () => {
+        navigation.navigate('Credelec', { popToTop: true });
+    };
     return (
         <SafeAreaView>
             <View style={{ width: width, height: height }}>
@@ -51,27 +54,34 @@ export const Dia = () => {
                                     <Ionicons name="eye-off" size={SPACING * 2} color={'gray'} />
                                     <Text style={{ color: SECUNDARY, fontSize: SPACING * 2, fontWeight: '800' }}>{user.saldo},200,42 </Text>
                                     <Text style={{ color: SECUNDARY }}>MZN </Text>
+
                                 </View>
                             </TouchableOpacity>
                         }
                     </View>
                     <TouchableOpacity>
 
-                        <View style={{ justifyContent: 'flex-end', alignContent: 'flex-end', alignSelf: 'flex-end', alignItems: 'flex-end', marginRight: SPACING }}>
+                        <View style={{ position: 'absolute', justifyContent: 'flex-end', alignContent: 'flex-end', alignSelf: 'flex-end', alignItems: 'flex-end', right: 30, bottom: 0 }}>
                             <Ionicons name="chevron-forward" size={SPACING * 3} color={SECUNDARY} />
                         </View>
                     </TouchableOpacity>
+
                     <TouchableOpacity style={{
                         borderColor: SECUNDARY, borderWidth: 1,
                         borderRadius: SPACING - 4, alignItems: 'center', alignSelf: 'center', alignContent: 'center', padding: 5, marginTop: SPACING * 2, elevation: 10
                     }}>
                         <Text style={{ color: SECUNDARY, }}>Ver movimentos</Text>
                     </TouchableOpacity>
-
+                    <View style={{ flexDirection: 'row', alignContent: 'center', alignItems: 'center', alignSelf: 'center', marginTop: SPACING + 2 }}>
+                        <Text style={{ backgroundColor: PRIMARY, width: 10, height: 10, borderRadius: SPACING }}></Text>
+                        <Text style={{ backgroundColor: SECUNDARY, width: 8, height: 8, borderRadius: SPACING, marginLeft: 3 }}></Text>
+                    </View>
                 </ImageBackground>
+
+
                 <ScrollView horizontal={true} style={{ position: 'absolute', top: 250 }} showsHorizontalScrollIndicator={false} >
                     {categorias.map((category) =>
-                        <TouchableOpacity key={category.id}>
+                        <TouchableOpacity key={category.id} onPress={() => navigation.navigate('Oneboard')}>
                             <View style={{
                                 width: 125, height: 150, backgroundColor: PRIMARY,
                                 marginTop: SPACING * 2, borderRadius: SPACING, marginLeft: SPACING, padding: SPACING, justifyContent: 'space-between'
