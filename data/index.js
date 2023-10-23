@@ -30,3 +30,19 @@ export const categorias =
             mame: "Pagamentos INSS"
         }
     ]
+export const CredelecData =
+    [
+        {
+            id: 1,
+            name: "Comprar",
+            img: require('../assets/img/icon/edmm.png'),
+        }, {
+            id: 2,
+            name: "Ultimas Recargas",
+            img: require('../assets/img/icon/edmm.png'),
+        }, {
+            id: 3,
+            name: "Infomacoes do contador",
+            img: require('../assets/img/icon/edmm.png'),
+        }
+    ]
