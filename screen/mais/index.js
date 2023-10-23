@@ -7,9 +7,10 @@ const { width, height } = Dimensions.get('screen');
 export const Mais = () => {
     return (
         <SafeAreaView>
-            <StatusBar style="light" backgroundColor={PRIMARY} />
+            <StatusBar style="dark" />
             <View style={{ width: width, height: height, backgroundColor: PRIMARY }}>
             </View>
         </SafeAreaView>
+
     )
 }
