@@ -5,8 +5,8 @@ import { TabsNavigation } from './router/tabs';
 
 export default function App() {
   return (
-    // <StackNavigation />
-    <TabsNavigation />
+    <StackNavigation />
+    // <TabsNavigation />
   );
 }
 
