@@ -1,4 +1,5 @@
 export const PRIMARY = "#f4005f";
+export const Rosa = "#d9115d";
 export const SECUNDARY = "#FFF";
 export const SPACING = 10;
 export const fundo = require('../assets/img/fundo.webp');
