@@ -14,13 +14,11 @@ const { width, height } = Dimensions.get('screen');
 
 export const Dia = ({ navigation }) => {
     const [active, setAtive] = useState(false);
-    const navigateToCredelec = () => {
-        navigation.navigate('Credelec', { popToTop: true });
-    };
+
     return (
         <SafeAreaView>
             <View style={{ width: width, height: height }}>
-                <StatusBar style="light" />
+                <StatusBar style="light" translucent animated />
                 <ImageBackground source={fundo} style={{ width: width, height: 340 }} >
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: SPACING, marginTop: SPACING * 3, alignItems: 'center' }}>
                         <Text style={{ color: SECUNDARY, fontWeight: '500' }}>Ola, {user.name}</Text>
@@ -81,7 +79,7 @@ export const Dia = ({ navigation }) => {
 
                 <ScrollView horizontal={true} style={{ position: 'absolute', top: 250 }} showsHorizontalScrollIndicator={false} >
                     {categorias.map((category) =>
-                        <TouchableOpacity key={category.id} onPress={() => navigation.navigate('Credelec')}>
+                        <TouchableOpacity key={category.id} onPress={() => navigation.navigate('Credelec', category.id)}>
                             <View style={{
                                 width: 125, height: 150, backgroundColor: PRIMARY,
                                 marginTop: SPACING * 2, borderRadius: SPACING, marginLeft: SPACING, padding: SPACING, justifyContent: 'space-between'
