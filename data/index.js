@@ -70,3 +70,88 @@ export const Recargas =
             img: require('../assets/img/icon/reload.png'),
         }
     ]
+
+export const Transferencias = [
+    {
+        id: 1,
+        name: 'Transferências Nacionas',
+        img: require('../assets/img/icon/nacional.png')
+    },
+    {
+        id: 2,
+        name: 'Transferências Internacionas',
+        img: require('../assets/img/icon/internacional.png')
+    },
+    {
+        id: 3,
+        name: 'Transferências para celular',
+        img: require('../assets/img/icon/celular.png')
+    },
+    {
+        id: 4,
+        name: 'Western Unicon ',
+        img: require('../assets/img/icon/western.png')
+    },
+    {
+        id: 5,
+        name: 'Manda Mola Bim',
+        img: require('../assets/img/icon/mandaBim.png')
+    },
+    {
+        id: 6,
+        name: 'Agendamentos',
+        img: require('../assets/img/icon/agendamento.png')
+    },
+]
+
+export const pagar =
+    [
+        {
+            id: 1,
+            name: 'Pagamentos de Serviços',
+            img: require('../assets/img/icon/pservicos.png')
+        },
+        {
+            id: 2,
+            name: 'Pagamentos INSS',
+            img: require('../assets/img/icon/Inss.png')
+        },
+        {
+            id: 3,
+            name: 'Cash Directo',
+            img: require('../assets/img/icon/cash.png')
+        },
+        {
+            id: 4,
+            name: 'Credelec',
+            img: require('../assets/img/icon/edmm.png')
+        },
+        {
+            id: 5,
+            name: 'Recargas Celular',
+            img: require('../assets/img/icon/recargas.png')
+        },
+        {
+            id: 6,
+            name: 'Pacotes TV',
+            img: require('../assets/img/icon/tv.png')
+        },
+    ]
+
+export const Maiss = [
+    {
+        id: 1,
+        name: 'Contactos',
+        img: require('../assets/img/icon/conatcto.png')
+    },
+    {
+        id: 2,
+        name: 'Balcões',
+        img: require('../assets/img/icon/balcoes.png')
+    },
+    {
+        id: 3,
+        name: 'Câmbio',
+        img: require('../assets/img/icon/cambio.png')
+    },
+]
