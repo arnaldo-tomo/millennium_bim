@@ -1,8 +1,18 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text, SafeAreaView } from 'react-native';
+import { SPACING } from '../../config';
+import { Ionicons } from "@expo/vector-icons";
 
 export default function CredeleckComprar() {
     return (
-        <View />
+        <SafeAreaView style={{ flex: 1 }}>
+            <View>
+                <Ionicons name="chevron" />
+            </View>
+            <View style={{ paddingTop: SPACING * 4 }}>
+                <Text>Comprar Credelec hoje as 0 a grande abertura / live</Text>
+            </View>
+
+        </SafeAreaView>
     );
 }
