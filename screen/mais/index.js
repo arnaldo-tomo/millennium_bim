@@ -2,7 +2,7 @@ import { Dimensions, Image, ScrollView, TouchableOpacity } from "react-native"
 import { SafeAreaView } from "react-native"
 import { Text, View } from "react-native"
 import { PRIMARY, Rosa, SECUNDARY, SPACING } from "../../config/index";
-import { CredelecData } from "../../data/index";
+import { Maiss } from "../../data/index";
 import { Ionicons } from "@expo/vector-icons";
 import { StatusBar } from "expo-status-bar";
 const { width, height } = Dimensions.get('screen');
@@ -10,12 +10,11 @@ export const Mais = ({ navigation }) => {
     return (
         <SafeAreaView>
             <StatusBar style="dark" />
-            <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: SPACING * 5, marginLeft: SPACING, justifyContent: 'space-between' }}>
-                <Text style={{ flexDirection: 'row', fontWeight: 'bold', alignContent: 'center', alignSelf: 'center', alignItems: 'center', marginRight: SPACING * 5 }}>Mais</Text>
-                <Text></Text>
+            <View style={{ alignItems: 'center', marginTop: SPACING * 5, marginLeft: SPACING, justifyContent: 'space-between' }}>
+                <Text style={{ fontWeight: 'bold', alignContent: 'center', alignSelf: 'center', alignItems: 'center', marginRight: SPACING * 5 }}>Mais</Text>
             </View>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
-                {CredelecData.map((category) =>
+                {Maiss.map((category) =>
                     <TouchableOpacity key={category.id} onPress={() => navigation.push('CredeleckComprar')}>
                         <View style={{
                             width: 125, height: 150, backgroundColor: PRIMARY,
@@ -26,6 +25,10 @@ export const Mais = ({ navigation }) => {
                         </View>
                     </TouchableOpacity>
                 )}
+            </ScrollView>
+            <Text style={{ fontWeight: 'bold', color: PRIMARY, padding: SPACING * 2 }}>Outros</Text>
+            <ScrollView>
+
             </ScrollView>
 
 
