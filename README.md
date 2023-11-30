@@ -3,7 +3,7 @@ Sempre em busca de desafios durante meu tempo livre, tenho me dedicado ao desenv
 
 Para utilizar o projeto, basta cloná-lo ou baixá-lo para o seu computador e, em seguida, executar o comando yarn install ou npm install. Certifique-se de ter o Node.js instalado em seu PC antes de prosseguir.
 
-Você pode baixar o projeto do lado do servidor através deste link [link do servidor].
+
 
 Para obter o arquivo APK, acesse [link de download APK].
 
