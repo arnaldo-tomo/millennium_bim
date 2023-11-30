@@ -30,6 +30,25 @@ export const categorias =
             mame: "Pagamentos INSS"
         }
     ]
+
+export const ecomerce =
+    [
+        {
+            id: 1,
+            img: require('../assets/img/icon/blockcard.png'),
+            mame: "Bloquaer cartão"
+        },
+        {
+            id: 2,
+            img: require('../assets/img/icon/ecomerce.png'),
+            mame: "Inibir E-Commerce"
+        },
+        {
+            id: 3,
+            img: require('../assets/img/icon/blovkcartao.png'),
+            mame: "Cancelar cartão"
+        },
+    ]
 export const CredelecData =
     [
         {
@@ -155,3 +174,52 @@ export const Maiss = [
         img: require('../assets/img/icon/cambio.png')
     },
 ]
+
+export const Outros =
+    [
+        {
+            id: 1,
+            name: 'Levantamento IZI',
+            img: require('../assets/img/icon/izi.png')
+        },
+        {
+            id: 2,
+            name: 'Actuliazar Documentos',
+            img: require('../assets/img/icon/documento.png')
+        },
+        {
+            id: 3,
+            name: 'Depositos a Prazo',
+            img: require('../assets/img/icon/deposito.png')
+        },
+        {
+            id: 4,
+            name: 'Requisitos Cartoes',
+            img: require('../assets/img/icon/credito.png')
+        },
+        {
+            id: 5,
+            name: 'Creditos',
+            img: require('../assets/img/icon/credito.png')
+        },
+        {
+            id: 6,
+            name: 'Seguros',
+            img: require('../assets/img/icon/seguros.png')
+        },
+        {
+            id: 7,
+            name: 'Internet Banking',
+            img: require('../assets/img/icon/bakink.png')
+        },
+        {
+            id: 8,
+            name: 'QRCode',
+            img: require('../assets/img/icon/qrcode.png')
+        },
+        {
+            id: 9,
+            name: 'Requisitar',
+            img: require('../assets/img/icon/cheque.png')
+        },
+    ]
