@@ -8,24 +8,26 @@ import { StatusBar } from "expo-status-bar";
 const { width, height } = Dimensions.get('screen');
 export const Pagar = ({ navigation }) => {
     return (
-        <SafeAreaView>
+        <SafeAreaView style={{ flex: 1, backgroundColor: 'white', }}>
             <StatusBar style="dark" />
-            <View style={{ alignItems: 'center', marginTop: SPACING * 5, marginLeft: SPACING, justifyContent: 'space-between' }}>
-                <Text style={{ fontWeight: 'bold', alignContent: 'center', alignSelf: 'center', alignItems: 'center', marginRight: SPACING * 5 }}>Pagar</Text>
+            <Text style={{ fontWeight: 'bold', alignContent: 'center', alignSelf: 'center', alignItems: 'center', marginTop: SPACING * 5, fontSize: 17 }}>Pagar</Text>
+
+            <View>
+
+                <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
+                    {pagar.map((category) =>
+                        <TouchableOpacity key={category.id} >
+                            <View style={{
+                                width: 125, height: 150, backgroundColor: PRIMARY,
+                                marginTop: SPACING * 2, borderRadius: SPACING, marginLeft: SPACING, padding: SPACING, justifyContent: 'space-between'
+                            }}>
+                                <Image source={category.img} style={{ width: 35, height: 35, justifyContent: 'space-between' }} />
+                                <Text style={{ color: SECUNDARY }}>{category.name}</Text>
+                            </View>
+                        </TouchableOpacity>
+                    )}
+                </ScrollView>
             </View>
-            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
-                {pagar.map((category) =>
-                    <TouchableOpacity key={category.id} onPress={() => navigation.push('CredeleckComprar')}>
-                        <View style={{
-                            width: 125, height: 150, backgroundColor: PRIMARY,
-                            marginTop: SPACING * 2, borderRadius: SPACING, marginLeft: SPACING, padding: SPACING, justifyContent: 'space-between'
-                        }}>
-                            <Image source={category.img} style={{ width: 45, height: 45, justifyContent: 'space-between' }} />
-                            <Text style={{ color: SECUNDARY }}>{category.name}</Text>
-                        </View>
-                    </TouchableOpacity>
-                )}
-            </ScrollView>
 
             <View style={{ justifyContent: 'center', alignContent: 'center', alignItems: 'center', padding: SPACING, marginTop: SPACING * 5 }}>
                 <Text style={{ fontWeight: 'bold', fontSize: SPACING * 2 }}>Favoritos</Text>
