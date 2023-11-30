@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#f4005f"
-      }
+      },
+      "package": "com.arnaldotomo.millennium_bim"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "107a71f5-ca92-415b-89ec-b5677b46b225"
+      }
     }
   }
 }
