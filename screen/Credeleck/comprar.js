@@ -10,7 +10,7 @@ export default function CredeleckComprar() {
                 <Ionicons name="chevron" />
             </View>
             <View style={{ paddingTop: SPACING * 4 }}>
-                <Text>Comprar Credelec hoje as 0 a grande abertura / live</Text>
+                <Text>Comprar Credelec</Text>
             </View>
 
         </SafeAreaView>
