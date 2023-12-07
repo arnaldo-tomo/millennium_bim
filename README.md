@@ -1,4 +1,4 @@
-# millennium_bim
+# millennium_bim.
 Sempre em busca de desafios durante meu tempo livre, tenho me dedicado ao desenvolvimento de aplicativos e sistemas. Recentemente, decidi enfrentar o desafio de reproduzir o aplicativo SMART IZI do Millennium BIM.,,
 
 
